@@ -1,0 +1,75 @@
+/* ="button button1 beforeStart" */
+header{
+    margin: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    background: #252222;
+    padding: 10px;
+}
+.button{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    margin-left: 20px;
+}
+.button1{
+    background-color: #59f;
+}
+.button1:hover{
+    background-color: #8cf;
+}
+.button2{
+    background-color: #f95;
+}
+.button2:hover{
+    background-color: #fc8;
+}
+.button3{
+    background-color: #f66;
+}
+.button3:hover{
+    background-color: #faa;
+}
+.button4{
+    color: #aaa;
+    border: solid 1px #888;
+    background-color: #252222;
+}
+.button4:hover{
+    background-color: #555;
+}
+/*none*/
+header[mode="none"] .beforeStart{
+    display: inline-block;
+}
+header[mode="none"] .online{
+    display: none;
+}
+header[mode="none"] .gaming{
+    display: none;
+}header[mode="none"] .beforeStart{
+    display: inline-block;
+}
+/* off */
+header[mode="off"] .beforeStart{
+    display: none;
+}
+header[mode="off"] .online{
+    display: none;
+}
+header[mode="off"] .gaming{
+    display: inline-block;
+}
+/* on */
+header[mode="on"] .beforeStart{
+    display: none;
+}
+header[mode="on"] .online{
+    display: inline-block;
+}
+header[mode="on"] .gaming{
+    display: inline-block;
+}

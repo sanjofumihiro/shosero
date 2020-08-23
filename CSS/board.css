@@ -1,0 +1,40 @@
+#boardArea{
+    position: relative;
+    margin: auto;
+    margin-top: 5vh;
+    width: 60vh;
+}
+#board{
+    display: block;
+    width: 60vh;
+    height: 60vh;
+    background-color: #c95;
+    box-sizing: border-box;
+    padding: 10px;
+}
+#board .row{
+    height: 11.1%;
+    width: 100%;
+    display: flex;
+    border-left: solid 1px #ddd;
+    border-right: solid 1px #ddd;
+    box-sizing: border-box;
+}
+#board .cell{
+    width: 11.1%;
+    height: 100%;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.bag{
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #666;
+    border-radius: 6px;
+    border: solid 2px #aaa;
+    width: 80vw;
+    height: 10vh;
+}

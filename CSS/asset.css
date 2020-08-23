@@ -1,0 +1,50 @@
+#asset{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+.asset{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 10;
+    width: 11.1%;
+    height: 11.1%;
+    background-image: url("../IMG/shogi.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: .5s;
+
+    color: #222;
+    font-size: 3.5vh;
+    text-align: center;
+    line-height: 7vh;
+    vertical-align: middle;
+    filter:drop-shadow(2px 2px 3px #111);
+    box-sizing: border-box;
+    cursor: pointer;;
+}
+.asset:hover{
+    background-color: #fffb;
+}
+#asset .enemy:hover{
+    background-color: #f77b;
+}
+#asset .enemy{
+    transform: rotate(180deg);
+}
+#asset .top{
+    border-top: double  6px #0cf;
+}
+#asset .left{
+    border-left: double  6px #0cf;
+}
+#asset .right{
+    border-right: double  6px #0cf;
+}
+#asset .bottom{
+    border-bottom: double  6px #0cf;
+}
